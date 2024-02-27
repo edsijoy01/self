@@ -1,0 +1,230 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>IPRC KARONGI</title>
+		<style>
+			.y{
+		height:27px;
+		border-radius: 5px;
+		color:blue;
+		background:#efe7eb;
+		font-size: 23px;
+		font-family:Juice ITC;
+		width: 300px;
+		border: none;
+		
+		text-align: center;
+		box-shadow:  3px 2px blue;
+     
+		
+		}
+	.y:hover{
+			background:#ffffff;
+			color:  blue;
+			font-size: 20px;
+			font-family:Monotype Corsiva;
+			}
+                       background{
+		height:27px;
+
+		width: 148px;
+		border: none;
+		
+		text-align: center;
+		
+		
+			}
+			#p{
+		height:27px;
+		border-radius: 0px 20px;
+		color:white;
+		background:blue;
+		font-size: 23px;
+		font-family:Juice ITC;
+		width: 148px;
+		border: none;
+		
+		text-align: center;
+		box-shadow:  3px 4px black;
+		
+			}
+			#p:hover{
+			background:black;
+			color:white;
+			font-size: 20px;
+			font-family:Juice ITC;	
+			}
+                        
+                        #btn{
+		height:32px;
+		border-radius:5px;
+                
+		color:white;
+		background:#007bff;
+                margin-top: -22px;
+		width: 118px;
+		border: none;
+                font-family: Arial Black; 
+                font-size: 20px;
+		margin-right:-970px; 
+		text-align: center;
+		box-shadow:  3px 3px blue;
+		
+			}
+			#btn:hover{
+			background:blue;
+			color:white;
+			font-size: 20px;
+			font-family:Juice ITC;	
+			}
+                        #logout{
+		height:35px;
+		border-radius:5px;
+		color:white;
+		background:#007bff;
+     
+		width: 428px;
+		border: none;
+                font-family: Arial Black; 
+                font-size: 20px;
+		
+		text-align: center;
+		box-shadow:  1px 2px white;
+                margin-top: 35px;
+		
+			}
+			#logout:hover{
+			background:#007bff;
+			color:white;
+			font-size: 20px;
+			font-family:Juice ITC;	
+			}
+                         #fab{
+                         height:32px;
+		border-radius: 9px;
+		color:  blue;
+		background:white;
+		font-size: 23px;
+		font-family:Juice ITC;
+		width: 260px;
+		border: none;
+               
+                
+                margin-top: -20px;
+		
+		text-align: center;
+		box-shadow: 2px 6px 10px blue;
+        
+                        }
+                        #fab:hover{
+                        border-radius: 20px;
+                        background:#ffffff;
+			color:  blue;
+			font-size: 20px;
+			font-family:Monotype Corsiva;
+                     }
+              
+                        
+
+
+		</style>
+	</head>
+        <body background="clever.PNG">
+            
+	<center>
+           <div style="width: 100%; height: 132px; background: #171a60;font-family: Copperplate Gothic Bold;
+                 color: white; text-align: center; font-size: 50px; box-shadow: 2px 10px 10px blue;">
+               <b style="font-family:Callifornia;
+                  font-size:22px; ">Welcome to</b><br><b>LIBRARY INFORMATION MANAGEMENT SYSTEM</b></div>
+                  <div><table style="margin-left:-1215px; margin-bottom: 22px;"><br><form method="post" action="search.php">
+<tr><td><input type="text" name="search" placeholder="Search Reg_Number" required="" id="fab"></td>
+<td><a href="search.php"><input type="submit" value="SEARCH" name="cherche" id="btn"></a></td></tr></table></form></div>
+                <div style="width:75%;height:50%;margin-right: 460px; margin-top: 20px; margin-top: 20px;">
+           <h1 style="font-family: Courier New;color: black;font-size: 35px;
+               box-shadow: 1px 1px 7px 2px white;">HERE ENTER STUDENT'S INFORMATION </h1> 
+            
+            
+        <table cellspacing="8px">
+            <form method="post" action="adminpage.php">
+                <tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Reg_Number</b></td>
+                    <td><input type="text" name="reg_number" Id="regna" placeholder="Enter Reg_Number" class="y" required ="">
+                    
+                    </td></tr>
+                
+		<tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">First_Name</b></td>
+                <td><input type="text" name="fname"n1 placeholder="Enter First_name"n1 class="y" required pattern="([a-zA-Z.' ]{4,60})"></td></tr>
+		<tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Second_Name</b></td>
+                <td><input type="text" name="lname"n1 placeholder="Enter Last_name"n1 class="y" required pattern="([a-zA-Z.' ]{4,60})"></td></tr>
+                <tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Department</b></td>
+                <td><select name="dpt" class="y" required=""><option>ICT</option><option>EEE</option></select></td></tr>
+		<tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Faculity</b></td>
+                <td><select name="faculity" class="y"><option>IT</option><option>ElectroMechamism</option></select></td></tr>
+		<tr><td><b style="font-family:Juice ITC;font-size: 20px;color:  blue">Sex</b></td>
+                <td><input type="radio" name="sex" value="male" required="">
+                <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Male</b><input type="radio" name="sex" value="female" required="">
+                <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Female</b></td></tr>
+		<tr><td> <b style="font-family:Juice ITC;font-size: 20px;color:  blue">Level</b></td>
+                <td><input type="text" name="level" placeholder="Enter Class/Level" class="y" required=""></td></tr>
+		<tr><td><b style="font-family:Juice ITC;font-size: 20px;color:  blue">Book_Name</b></td>
+                <td><input type="text" name="bookname"n1 placeholder="Enter Bookname"n1 class="y" required pattern="([a-zA-Z. ]{4,60})"></td></tr>
+		<tr><td><b style="font-family:Juice ITC;font-size: 20px;color:  blue">Book_Id</b></td>
+                    <td><input type="text" name="bookid" placeholder="Enter Book_Id" class="y" required pattern="([0-9. ]{1,10})" maxlength="9"></td></tr>
+                <tr><td><b style="font-family:Juice ITC;font-size: 20px;color:  blue">Date</b></td>
+                <td><input type="date" name="date" placeholder="date" class="y" required=""><tr><td></td>
+                    <td><input type="submit" value="INSERT" name="sub" id="p">&nbsp;
+<a href="view.php"><input type="button" value="VIEW" name="view" id="p"></a></td></tr></table>
+                </div>
+                
+</center>
+        <fieldset style="width:28%;height:520px;margin-left: 1040px;margin-top: -546px; background: #007d28;border-radius:10px; color: white;">
+            
+            <center><b style="font-family: Courier New; font-size: 30px;"><u>ABOUT US</u></b></center><br>
+                Integrated Polytechnique Relgion College Karongi (IPRC KARONGI)
+                This is college of RWANDA POLYTECHNIQUE Located in Western province in Karongi District,
+                This IPRC it facilitate some students to improve his/her skills in the following  
+                DEPARTMENTS such as ICT,PMT,HOM,EEE , GENERAL MECHANICS and so many So this System will be used in this collage for reducing time taken for Registaring some students who need to borrow a Book(s)
+                <center><b style="font-family: Courier New; font-size: 30px;"><u>REPORT</u></b></center><br>
+               For Making the REPORT it will facilitate to know the students borrow a books and which day or Date they borrow those books.
+               HERE you can click on this link then<b> SEARCH DATE </b></br></br>
+               <a href="report.html"> <b style="font-family: Courier New; font-size: 27px; color: white; box-shadow: 2px 6px 10px 7px yellow; text-decoration: none"> CLICK HERE TO MAKE REPORT</b></a><br><br><br><br><br><br>
+ 
+               <a href="index.html"><input type="button" value="LOGOUT" name="out" id="logout"></a>
+ 
+        </fieldset>
+      
+        </form><center><br>
+            <b style="font-family: Courier New; font-size: 22px; margin-bottom: 22px; margin-right: -663px;">&COPY; Right Reserved by Fab & Zed</b></center></body>
+</html>
+<?php
+
+include_once('conn.php');
+//include_once('style.css');
+// names of input types from add.html 
+if(isset($_POST['sub'])){
+    $a = $_POST['reg_number'];
+    $a1 = $_POST['fname'];
+    $a2 = $_POST['lname'];
+    $a3 = $_POST['dpt']; 
+    $a4 = $_POST['faculity'];
+    $a5 = $_POST['sex']; 
+    $a6 = $_POST['level']; 
+    $a7 = $_POST['bookname'];
+    $a8 = $_POST['bookid'];
+    $a9 = $_POST['date'];
+    
+}
+if($a!="")
+$sql = $conn -> exec("INSERT INTO library VALUES('$a', '$a1', '$a2', '$a3','$a4','$a5', '$a6','$a7','$a8','$a9') ");
+if($sql){
+    echo "Successfull saved "."<br>";   
+}
+else
+{
+echo "please try again data not inserted "."<br>";
+}
+?>
